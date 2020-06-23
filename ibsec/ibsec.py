@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-import fire
 import json
 from os import path
 import pyperclip
@@ -12,5 +10,3 @@ def lookup(code1, code2):
     pyperclip.copy(response)
     print (response + ' has been copied to the clipboard!')
 
-if __name__ == '__main__':
-  fire.Fire(lookup)
